@@ -1,4 +1,3 @@
-<!-- Melhor Resultado até agora -->
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
@@ -9,7 +8,7 @@
     <!--Boxicons CSS-->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <!--/Boxicons CSS-->
-    <title>AHI | Cluster MG - BHZ</title>
+    <title>AHI | NAR-2  -  Fechamento Mensal</title>
     <style>
         * {
             margin: 0;
@@ -417,7 +416,7 @@
     </div>
 
     <footer>
-      <p>&copy; 2025 AHI | Cluster MG - BHZ. Todos os direitos reservados.</p>
+        <p>&copy; <span id="anoAtual"></span> AHI | NAR-2. Todos os direitos reservados.</p>
     </footer>
 
     <!-- Suport -->
@@ -782,6 +781,10 @@
 
             atualizarLogo(); // Atualiza ao carregar a página
             window.addEventListener("resize", atualizarLogo); // Atualiza ao redimensionar a tela
+        });
+
+            document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("anoAtual").textContent = new Date().getFullYear();
         });
 
 
